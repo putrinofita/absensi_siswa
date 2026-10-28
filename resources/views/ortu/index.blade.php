@@ -104,8 +104,7 @@ Riwayat Absensi
 
 <td>
 
-<span class="badge text-bg-{{ $absensi-
->badgeStatus() }}">
+<span class="badge text-bg-{{ $absensi->badgeStatus() }}">
 {{ $absensi->statusLabel() }}
 </span>
 </td>

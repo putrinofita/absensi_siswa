@@ -95,8 +95,7 @@ center gap-2">
 <div>
 <div class="fw-semibold">{{ $absensi->siswa_nama }}</div>
 <div class="small text-muted">
-{{ $absensi->mapel_nama }} &middot; {{ $absensi->tanggal-
->format('d/m/Y') }}
+{{ $absensi->mapel_nama }} &middot; {{ $absensi->tanggal->format('d/m/Y') }}
 </div>
 </div>
 
