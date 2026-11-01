@@ -56,7 +56,7 @@ $response->assertSee('0061234567');
 }
 public function test_nisn_tidak_ditemukan_menampilkan_pesan(): void
 {
-$response = $this->get(route('ortu.index', ['nisn' => '9999999999']));
+$response = $this->get(route('ortu.index', ['nisn' => '0061234567']));
 $response->assertOk();
 $response->assertSee('tidak ditemukan');
 }
