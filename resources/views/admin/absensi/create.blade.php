@@ -22,8 +22,7 @@ align-items-end">
 
 <option value="{{ $jadwal->id }}" @selected((int)
 request('jadwal_id') === $jadwal->id)>
-{{ $jadwal->kelas }} &mdash; {{ $jadwal->hari }} {{ $jadwal-
->jam() }} &mdash; {{ $jadwal->mapel_nama }} ({{ $jadwal->guru_nama }})
+{{ $jadwal->kelas }} &mdash; {{ $jadwal->hari }} {{ $jadwal->jam() }} &mdash; {{ $jadwal->mapel_nama }} ({{ $jadwal->guru_nama }})
 </option>
 @endforeach
 </select>
@@ -50,8 +49,7 @@ Tampilkan Siswa
 {{ $selectedJadwal->kelas }} &mdash; {{ $selectedJadwal->mapel_nama }}
 <span class="text-muted fw-normal">
 ({{ $selectedJadwal->hari }}, {{ $selectedJadwal->jam() }} &middot; {{
-$selectedJadwal->guru_nama }} &middot; {{ \Illuminate\Support\Carbon::parse($tanggal)-
->format('d/m/Y') }})
+$selectedJadwal->guru_nama }} &middot; {{ \Illuminate\Support\Carbon::parse($tanggal)->format('d/m/Y') }})
 </span>
 </div>
 </div>

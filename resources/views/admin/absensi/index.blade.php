@@ -17,8 +17,7 @@ Input Absensi
 
 <option value="{{ $jadwal->id }}" @selected((int)
 request('jadwal_id') === $jadwal->id)>
-{{ $jadwal->kelas }} &mdash; {{ $jadwal->hari }} {{ $jadwal-
->jam() }} &mdash; {{ $jadwal->mapel_nama }}
+{{ $jadwal->kelas }} &mdash; {{ $jadwal->hari }} {{ $jadwal->jam() }} &mdash; {{ $jadwal->mapel_nama }}
 </option>
 @endforeach
 </select>
@@ -70,8 +69,7 @@ secondary">Reset</a>
 <tr>
 <td>{{ $absensis->firstItem() + $loop->index }}</td>
 <td>{{ $absensi->tanggal->format('d/m/Y') }}</td>
-<td><span class="badge text-bg-light text-dark">{{ $absensi-
->jadwal_kelas }}</span></td>
+<td><span class="badge text-bg-light text-dark">{{ $absensi->jadwal_kelas }}</span></td>
 <td>{{ $absensi->mapel_nama }}</td>
 <td>{{ $absensi->jadwalJam() }}</td>
 <td>{{ $absensi->siswa_nama }}</td>

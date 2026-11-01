@@ -75,8 +75,7 @@ Ubah
 
 <form method="POST" action="{{ route('admin.jadwal.destroy',
 
-$jadwal) }}" class="d-inline"onsubmit="return confirm('Hapus jadwal {{ $jadwal-
->mapel_nama }} kelas {{ $jadwal->kelas }} hari {{ $jadwal->hari }}?')">
+$jadwal) }}" class="d-inline"onsubmit="return confirm('Hapus jadwal {{ $jadwal->mapel_nama }} kelas {{ $jadwal->kelas }} hari {{ $jadwal->hari }}?')">
 @csrf
 
 @method('DELETE')
