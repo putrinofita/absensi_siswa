@@ -73,7 +73,7 @@ Ubah
 
 <form method="POST" action="{{ route('admin.siswa.destroy',
 
-$siswa) }}" class="d-inline"onsubmit="return confirm('Hapus siswa {{ $siswa->nama }}
+$siswa) }}" class="d-inline" onsubmit="return confirm('Hapus siswa {{ $siswa->nama }}
 beserta akun loginnya?')">
 @csrf
 

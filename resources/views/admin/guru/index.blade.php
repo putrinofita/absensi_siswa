@@ -58,7 +58,7 @@ Ubah
 
 <form method="POST" action="{{ route('admin.guru.destroy',
 
-$guru) }}" class="d-inline"onsubmit="return confirm('Hapus guru {{ $guru->nama }}
+$guru) }}" class="d-inline" onsubmit="return confirm('Hapus guru {{ $guru->nama }}
 beserta akun loginnya?')">
 @csrf
 

@@ -89,7 +89,7 @@ Ubah
 
 <form method="POST" action="{{ route('admin.absensi.destroy',
 
-$absensi) }}" class="d-inline"onsubmit="return confirm('Hapus catatan absensi {{
+$absensi) }}" class="d-inline" onsubmit="return confirm('Hapus catatan absensi {{
 $absensi->siswa_nama }} tanggal {{ $absensi->tanggal->format('d/m/Y') }}?')">
 @csrf
 
