@@ -32,7 +32,7 @@ class AbsensiController extends Controller
             ->when($request->filled('status'), fn ($query) => $query->where('absensi.status', $request->input('status'))) 
             ->orderByDesc('absensi.tanggal') 
             ->orderByDesc('absensi.id') 
-            ->paginate(20) 
+            ->paginate(20)   // bagian ini tuh yang nampilin bakalan ada berapa baris si absensi yang bakalan ditampilin
             ->withQueryString(); 
  
         return view('admin.absensi.index', [ 
