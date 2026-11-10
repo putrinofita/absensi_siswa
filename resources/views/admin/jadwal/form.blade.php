@@ -82,20 +82,14 @@ $jadwal?->hari) === $hari)>{{ $hari }}</option>
 <div class="col-md-4 mb-3">
 
 <label for="jam_mulai" class="form-label">Jam Mulai</label>
-<input type="time" class="form-control" id="jam_mulai"
-
-name="jam_mulai"
-value="{{ old('jam_mulai', $jadwal ? substr($jadwal-
->jam_mulai, 0, 5) : '') }}" required>
+<input type="time" class="form-control" id="jam_mulai" name="jam_mulai"value="{{ old('jam_mulai', $jadwal ? substr($jadwal->jam_mulai, 0, 5) : '') }}" required>
 </div>
 </div>
 <div class="mb-4" style="max-width: 220px;">
     <label for="jam_selesai" class="form-label">Jam Selesai</label>
 <input type="time" class="form-control" id="jam_selesai"
 
-name="jam_selesai"
-value="{{ old('jam_selesai', $jadwal ? substr($jadwal-
->jam_selesai, 0, 5) : '') }}" required>
+name="jam_selesai" value="{{ old('jam_selesai', $jadwal ? substr($jadwal->jam_selesai, 0, 5) : '') }}" required>
 </div>
 <div class="d-flex gap-2">
 <button class="btn btn-primary" type="submit">

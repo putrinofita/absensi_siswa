@@ -59,8 +59,7 @@ name="jenis_kelamin" required>
 <option value="L" @selected(old('jenis_kelamin', $siswa?-
 
 >jenis_kelamin) === 'L')>Laki-laki</option>
-<option value="P" @selected(old('jenis_kelamin', $siswa?-
->jenis_kelamin) === 'P')>Perempuan</option>
+<option value="P" @selected(old('jenis_kelamin', $siswa?->jenis_kelamin) === 'P')>Perempuan</option>
 </select>
 </div>
 
@@ -69,9 +68,7 @@ name="jenis_kelamin" required>
 <label for="tanggal_lahir" class="form-label">Tanggal
 Lahir</label>
 <input type="date" class="form-control" id="tanggal_lahir"
-name="tanggal_lahir"
-value="{{ old('tanggal_lahir', $siswa?->tanggal_lahir?-
->format('Y-m-d')) }}">
+name="tanggal_lahir" value="{{ old('tanggal_lahir', $siswa?->tanggal_lahir?->format('Y-m-d')) }}">
 </div>
 </div>
 <div class="mb-4">

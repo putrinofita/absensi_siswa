@@ -71,10 +71,7 @@ btn-sm btn-outline-warning">
 Ubah
 </a>
 
-<form method="POST" action="{{ route('admin.siswa.destroy',
-
-$siswa) }}" class="d-inline" onsubmit="return confirm('Hapus siswa {{ $siswa->nama }}
-beserta akun loginnya?')">
+<form method="POST" action="{{ route('admin.siswa.destroy', $siswa) }}" class="d-inline" onsubmit="return confirm('Hapus siswa {{ $siswa->nama }} beserta akun loginnya?')">
 @csrf
 
 @method('DELETE')

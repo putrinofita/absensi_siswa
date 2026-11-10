@@ -62,8 +62,7 @@ me-1">{{ $hari }}</span>
 </div>
 @empty
 <div class="col-12">
-<div class="alert alert-info mb-0">Belum ada jadwal untuk kelas {{ $siswa-
->kelas }}.</div>
+<div class="alert alert-info mb-0">Belum ada jadwal untuk kelas {{ $siswa->kelas }}.</div>
 </div>
 @endforelse
 </div>
