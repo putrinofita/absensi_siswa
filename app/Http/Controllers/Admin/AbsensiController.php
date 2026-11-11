@@ -33,7 +33,7 @@ class AbsensiController extends Controller
             ->orderByDesc('absensi.tanggal') 
             ->orderByDesc('absensi.id') 
             ->paginate(20)   // bagian ini tuh yang nampilin bakalan ada berapa baris si absensi yang bakalan ditampilin
-            ->withQueryString(); 
+            ->withQueryString(); //Fungsinya menjaga filter tetap ikut saat pindah halaman
  
         return view('admin.absensi.index', [ 
             'absensis' => $absensis, 
