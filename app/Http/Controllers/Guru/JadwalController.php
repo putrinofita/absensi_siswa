@@ -11,14 +11,14 @@ class JadwalController extends Controller
 */
 public function index(Request $request): View
 {
-$guru = $request->user()->profilGuru();
-abort_if($guru === null, 403, 'Akun ini belum terhubung dengan data guru.');
-$jadwals = Jadwal::query()
-->lengkap()
-->where('jadwal.guru_id', $guru->id)
-->urut()
-->get()
-->groupBy('hari');
-return view('guru.jadwal.index', compact('guru', 'jadwals'));
-}
+    $guru = $request->user()->profilGuru();
+        abort_if($guru === null, 403, 'Akun ini belum terhubung dengan data guru.');
+    $jadwals = Jadwal::query()
+        ->lengkap()
+        ->where('jadwal.guru_id', $guru->id)
+        ->urut()
+        ->get()
+        ->groupBy('hari');
+        return view('guru.jadwal.index', compact('guru', 'jadwals'));
+    }
 }
