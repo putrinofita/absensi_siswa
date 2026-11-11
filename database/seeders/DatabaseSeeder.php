@@ -10,9 +10,9 @@ use WithoutModelEvents;
 */
 public function run(): void
 {
-$this->call([
-AdminSeeder::class,
-DemoSeeder::class,
-]);
-}
+    $this->call([
+        AdminSeeder::class,
+        DemoSeeder::class,
+        ]);
+    }
 }
